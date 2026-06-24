@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'NexaHeavy';
+  src: local('NexaHeavy'),
+       url('./Nexa-Heavy.ttf') format('truetype');
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'StretchPro';
+  src: local('StretchPro'),
+       url('./StretchPro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NexaExtraLight';
+  src: local('NexaExtraLight'),
+       url('./Nexa-ExtraLight.ttf') format('truetype');
+  font-weight: 200 400;
+  font-style: normal;
+  font-display: swap;
+}
