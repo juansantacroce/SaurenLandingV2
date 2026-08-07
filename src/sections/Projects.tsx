@@ -6,6 +6,7 @@ import { staggerContainer, viewportOnce } from '../lib/motion';
 import logoDinter from '../assets/logos/LogoDinter.webp';
 import logoMomentos from '../assets/logos/LogoMomentos.webp';
 import logoCaddy from '../assets/logos/LogoCaddy.webp';
+import logoDacapo from '../assets/logos/LogoDacapo.webp';
 
 export default function Projects() {
   return (
@@ -32,20 +33,33 @@ export default function Projects() {
           <ProjectCard
             name="Dinter"
             logo={logoDinter}
-            description="Soluciones de software a medida para optimizar la operación de Dinter, con foco en eficiencia y escalabilidad."
-            tags={['Software a medida']}
+            description="Sistema de gestión para una distribuidora de publicaciones y coleccionables: desde el ingreso de mercadería hasta la asignación masiva a cientos de puntos de venta, con un motor propio que sugiere cantidades según el historial de cada cliente. Integrado en tiempo real con el operador logístico mediante una arquitectura orientada a eventos."
+            tags={['Laravel', 'React', 'TypeScript', 'RabbitMQ', 'MySQL']}
           />
           <ProjectCard
             name="Momentos"
             logo={logoMomentos}
-            description="Plataforma de e-commerce B2B/B2C construida sobre PrestaShop para un cliente líder en jugueterías, con sincronización de inventario en tiempo real vía API con su ERP."
+            description="Plataforma de e-commerce B2B/B2C sobre PrestaShop para un distribuidor mayorista líder en jugueterías, integrada en tiempo real con su ERP contable y su operador logístico: facturas, notas de crédito y órdenes de compra se sincronizan automáticamente entre los tres sistemas."
             tags={['PrestaShop', 'PHP', 'MySQL', 'React', 'TypeScript']}
           />
           <ProjectCard
             name="Caddy"
             logo={logoCaddy}
-            description="App web/mobile de envíos para Caddy, abarcando desde la solicitud del envío hasta la entrega del paquete."
+            description="App web/mobile de envíos para Caddy, abarcando desde la solicitud del envío hasta la entrega del paquete, con seguimiento en tiempo real."
             tags={['Software a medida', 'Mobile']}
+          />
+          <ProjectCard
+            name="Ticketera"
+            logoText="Ticketlify"
+            logoTextColor="#6C5CE7"
+            description="Plataforma de venta y gestión de entradas para eventos: checkout con Mercado Pago, tickets con código QR único, validación de acceso por cámara y reserva temporal de asientos para evitar sobreventa. Arquitectura modular por dominio, preparada para escalar a microservicios."
+            tags={['Java', 'Spring Boot', 'Next.js', 'PostgreSQL', 'Mercado Pago']}
+          />
+          <ProjectCard
+            name="Dacapo"
+            logo={logoDacapo}
+            description="Sistema de gestión integral para una escuela de música: agenda de clases, liquidación automática de honorarios docentes, seguimiento del progreso de cada alumno y facturación electrónica AFIP. Incluye una plataforma de entrenamiento auditivo con IA generativa y una app móvil única para profesores y alumnos."
+            tags={['Django', 'React', 'React Native', 'IA']}
           />
         </motion.div>
       </div>

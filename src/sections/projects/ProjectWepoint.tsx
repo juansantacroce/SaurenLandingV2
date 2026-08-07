@@ -4,7 +4,13 @@ import BrowserFrame from '../../components/ui/BrowserFrame';
 import dashboardCliente from '../../assets/images/WepointDashboard.png';
 import logoWepoint from '../../assets/logos/LogoWepoint.webp';
 
-const tags = ['Laravel', 'React', 'TypeScript', 'MySQL', 'Docker'];
+const tags = ['Laravel', 'React', 'TypeScript', 'MySQL', 'WebSockets', 'Docker', 'AFIP'];
+
+const stats = [
+  { n: '+9.000', l: 'Paquetes despachados' },
+  { n: '+12.000', l: 'Lotes gestionados' },
+  { n: '+220.000', l: 'Movimientos trazados' },
+];
 
 export default function ProjectWepoint() {
   return (
@@ -16,19 +22,22 @@ export default function ProjectWepoint() {
       className="grid gap-10 rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-transparent p-6 md:grid-cols-2 md:items-center md:p-12"
     >
       <div className="order-2 md:order-1">
+        <div className="mb-4 inline-flex items-center rounded-xl bg-white/95 px-5 py-3.5">
+          <img src={logoWepoint} alt="Wepoint" className="h-11 w-auto" />
+        </div>
         <span className="mb-4 inline-block rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-[11px] font-[NexaHeavy] uppercase tracking-[0.16em] text-accent">
           Caso destacado
         </span>
-        <div className="mb-5 flex items-center gap-3">
-          <img src={logoWepoint} alt="Wepoint" className="h-7 w-auto" />
-        </div>
         <p className="mb-6 text-base leading-relaxed text-white/60">
-          Sistema integral de gestión empresarial desarrollado en Laravel, diseñado para
-          optimizar procesos internos, mejorar la eficiencia operativa y ofrecer soluciones
-          personalizadas a las necesidades de cada cliente. Incluye un portal de cliente y un
-          panel administrativo para el equipo interno, ambos construidos en React y TypeScript.
+          Plataforma de fulfillment logístico (WMS) en producción, usada hoy por más de una
+          decena de empresas para gestionar la operación completa de sus depósitos: recepción de
+          mercadería, guardado posicionado, picking colaborativo en tiempo real entre varios
+          operarios, control de calidad en el empaque y despacho clasificado por transportista.
+          Incluye escaneo por cámara desde celulares —sin hardware dedicado— y facturación
+          electrónica AFIP integrada. Cuenta con un portal de cliente y un panel administrativo
+          para el equipo interno, ambos en React y TypeScript.
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="mb-6 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <span
               key={tag}
@@ -36,6 +45,14 @@ export default function ProjectWepoint() {
             >
               {tag}
             </span>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-6 border-t border-white/10 pt-5">
+          {stats.map((stat) => (
+            <div key={stat.l}>
+              <div className="font-[NexaHeavy] text-xl text-white">{stat.n}</div>
+              <div className="text-[10px] uppercase tracking-wide text-white/40">{stat.l}</div>
+            </div>
           ))}
         </div>
       </div>

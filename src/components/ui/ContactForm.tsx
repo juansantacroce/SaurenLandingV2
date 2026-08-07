@@ -116,6 +116,14 @@ export default function ContactForm() {
       >
         {status === 'sending' ? 'Enviando…' : 'Comencemos'}
       </button>
+
+      <p className="text-center text-[11px] text-white/35">
+        Al enviar este formulario aceptás nuestra{' '}
+        <a href="/privacidad.html" className="underline hover:text-white/60">
+          política de privacidad
+        </a>
+        .
+      </p>
     </form>
   );
 }

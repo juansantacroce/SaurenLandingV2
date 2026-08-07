@@ -4,23 +4,43 @@ import { fadeUp } from '../../lib/motion';
 interface ProjectCardProps {
   name: string;
   logo?: string;
+  logoText?: string;
+  logoTextColor?: string;
   description: string;
   tags: string[];
 }
 
-export default function ProjectCard({ name, logo, description, tags }: ProjectCardProps) {
+export default function ProjectCard({
+  name,
+  logo,
+  logoText,
+  logoTextColor = '#1A1A1A',
+  description,
+  tags,
+}: ProjectCardProps) {
   return (
     <motion.div
       variants={fadeUp}
       className="group flex flex-col rounded-2xl border border-white/10 bg-white/[0.02] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-accent/40 hover:bg-white/[0.04]"
     >
-      <div className="mb-5 flex h-12 items-center">
+      <div className="mb-5 flex h-16 items-center justify-center">
         {logo ? (
-          <img
-            src={logo}
-            alt={name}
-            className="h-9 w-auto max-w-[140px] object-contain grayscale brightness-200 transition-all duration-300 group-hover:grayscale-0 group-hover:brightness-100"
-          />
+          <div className="inline-flex items-center justify-center rounded-xl bg-white/95 px-5 py-3">
+            <img
+              src={logo}
+              alt={name}
+              className="h-10 w-auto max-w-[160px] object-contain"
+            />
+          </div>
+        ) : logoText ? (
+          <div className="inline-flex items-center justify-center rounded-xl bg-white/95 px-5 py-3">
+            <span
+              className="text-2xl tracking-tight"
+              style={{ fontFamily: 'StretchPro', color: logoTextColor }}
+            >
+              {logoText}
+            </span>
+          </div>
         ) : (
           <span className="text-xl font-[NexaHeavy] text-white">{name}</span>
         )}
