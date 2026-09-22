@@ -4,6 +4,7 @@ import { fadeUp } from '../../lib/motion';
 interface ProjectCardProps {
   name: string;
   logo?: string;
+  logoClassName?: string;
   logoText?: string;
   logoTextColor?: string;
   description: string;
@@ -13,6 +14,7 @@ interface ProjectCardProps {
 export default function ProjectCard({
   name,
   logo,
+  logoClassName,
   logoText,
   logoTextColor = '#1A1A1A',
   description,
@@ -29,7 +31,7 @@ export default function ProjectCard({
             <img
               src={logo}
               alt={name}
-              className="h-10 w-auto max-w-[160px] object-contain"
+              className={logoClassName ?? 'h-10 w-auto max-w-[160px] object-contain'}
             />
           </div>
         ) : logoText ? (

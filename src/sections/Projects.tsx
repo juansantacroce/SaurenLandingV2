@@ -7,6 +7,8 @@ import logoDinter from '../assets/logos/LogoDinter.webp';
 import logoMomentos from '../assets/logos/LogoMomentos.webp';
 import logoCaddy from '../assets/logos/LogoCaddy.webp';
 import logoDacapo from '../assets/logos/LogoDacapo.webp';
+import logoManicop from '../assets/logos/LogoManicop.png';
+import logoIndyec from '../assets/logos/LogoIndyec.svg';
 
 export default function Projects() {
   return (
@@ -60,6 +62,19 @@ export default function Projects() {
             logo={logoDacapo}
             description="Sistema de gestión integral para una escuela de música: agenda de clases, liquidación automática de honorarios docentes, seguimiento del progreso de cada alumno y facturación electrónica AFIP. Incluye una plataforma de entrenamiento auditivo con IA generativa y una app móvil única para profesores y alumnos."
             tags={['Django', 'React', 'React Native', 'IA']}
+          />
+          <ProjectCard
+            name="Indyec"
+            logo={logoIndyec}
+            description="App web progresiva (PWA) para la gestión integral de una clínica especializada en nefrología y cardiología: historia clínica digital, seguimiento de sesiones de diálisis, agenda de turnos, control de stock de insumos y consentimientos informados digitales. Instalable en Android e iOS sin pasar por tiendas de apps, con soporte offline y diseño mobile-first."
+            tags={['React', 'TypeScript', 'PWA', 'Laravel', 'MySQL']}
+          />
+          <ProjectCard
+            name="Manicop"
+            logo={logoManicop}
+            logoClassName="h-14 w-auto max-w-[160px] object-contain"
+            description="Módulo de carga horaria sobre Odoo 18 Enterprise para digitalizar la gestión de mano de obra operativa en planta: supervisores asignan operarios por turno y sector, y el sistema imputa costos automáticamente a las órdenes de fabricación según reglas configurables por kilos producidos, unidades o consumo de ingrediente."
+            tags={['Odoo 18', 'Python', 'ERP', 'Fabricación']}
           />
         </motion.div>
       </div>
