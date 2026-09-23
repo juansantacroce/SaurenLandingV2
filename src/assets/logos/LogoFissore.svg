@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <!-- Red square icon -->
+  <rect x="4" y="4" width="68" height="72" rx="6" ry="6" fill="#C8181E"/>
+
+  <!-- White F -->
+  <text x="38" y="46" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="36" fill="white" text-anchor="middle">F</text>
+
+  <!-- DESDE 1965 arc text — approximated as small straight text at bottom of icon -->
+  <text x="38" y="68" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="white" text-anchor="middle" letter-spacing="0.8">DESDE 1965</text>
+
+  <!-- FISSORE S.A. -->
+  <text x="86" y="44" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" fill="#1A1A1A" letter-spacing="-0.5">FISSORE S.A.</text>
+
+  <!-- Tagline -->
+  <text x="87" y="60" font-family="Arial, sans-serif" font-size="9.5" font-weight="400" fill="#1A1A1A" letter-spacing="1.2">INSUMOS Y EQUIPAMIENTO MÉDICO ESPECIALIZADO</text>
+</svg>

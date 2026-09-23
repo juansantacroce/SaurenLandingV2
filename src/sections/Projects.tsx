@@ -9,6 +9,8 @@ import logoCaddy from '../assets/logos/LogoCaddy.webp';
 import logoDacapo from '../assets/logos/LogoDacapo.webp';
 import logoManicop from '../assets/logos/LogoManicop.png';
 import logoIndyec from '../assets/logos/LogoIndyec.svg';
+import logoFissore from '../assets/logos/LogoFissore.svg';
+import logoAether from '../assets/logos/LogoAether.svg';
 
 export default function Projects() {
   return (
@@ -62,6 +64,20 @@ export default function Projects() {
             logo={logoDacapo}
             description="Sistema de gestión integral para una escuela de música: agenda de clases, liquidación automática de honorarios docentes, seguimiento del progreso de cada alumno y facturación electrónica AFIP. Incluye una plataforma de entrenamiento auditivo con IA generativa y una app móvil única para profesores y alumnos."
             tags={['Django', 'React', 'React Native', 'IA']}
+          />
+          <ProjectCard
+            name="Aether ERP"
+            logo={logoAether}
+            logoClassName="h-12 w-auto max-w-[200px] object-contain"
+            description="Ecosistema ERP modular headless para PyMEs argentinas. Facturación electrónica AFIP/ARCA nativa, multi-tenencia, inventario, compras y CRM — todo desacoplado por dominio y comunicado vía eventos, sobre una misma base reutilizable para múltiples clientes."
+            tags={['Laravel 13', 'PHP 8.4', 'React 19', 'PostgreSQL', 'Redis', 'AFIP/ARCA']}
+          />
+          <ProjectCard
+            name="Fissore"
+            logo={logoFissore}
+            logoClassName="h-10 w-auto max-w-[200px] object-contain"
+            description="Módulo de pagos a medida sobre Odoo 18 para Argentina: cálculo automático de retenciones ARCA, recibos que reconcilian cheques, transferencias y pagos parciales combinados en una sola operación — algo que Odoo estándar no resuelve para el mercado local."
+            tags={['Odoo 18', 'Python', 'ERP', 'Argentina']}
           />
           <ProjectCard
             name="Indyec"
