@@ -11,7 +11,7 @@ import logoManicop from '../assets/logos/LogoManicop.png';
 import logoIndyec from '../assets/logos/LogoIndyec.svg';
 import logoFissore from '../assets/logos/LogoFissore.svg';
 import logoAether from '../assets/logos/LogoAether.svg';
-import logoInfas from '../assets/logos/LogoInfas.svg';
+import logoInfas from '../assets/logos/LogoInfas.png';
 
 export default function Projects() {
   return (
