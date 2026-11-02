@@ -76,7 +76,7 @@ export default function Hero() {
           className="mt-10 flex flex-col gap-3 sm:flex-row"
         >
           <Button
-            href="https://wa.me/5493517336655?text=¡Hola!%20Me%20interesa%20una%20auditoría%20de%20software%20gratuita."
+            href="https://wa.me/5493354369646?text=¡Hola!%20Me%20interesa%20una%20auditoría%20de%20software%20gratuita."
             target="_blank"
             rel="noreferrer"
           >

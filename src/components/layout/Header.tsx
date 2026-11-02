@@ -58,7 +58,7 @@ export default function Header() {
           </nav>
 
           <a
-            href="https://wa.me/5493517336655?text=¡Hola!%20Me%20interesa%20una%20auditoría%20de%20software%20gratuita."
+            href="https://wa.me/5493354369646?text=¡Hola!%20Me%20interesa%20una%20auditoría%20de%20software%20gratuita."
             target="_blank"
             rel="noreferrer"
             className="rounded-full bg-white px-5 py-2 text-sm font-[NexaHeavy] uppercase tracking-wide text-black transition-colors hover:bg-accent hover:text-white"

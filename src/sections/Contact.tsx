@@ -5,7 +5,7 @@ import ContactForm from '../components/ui/ContactForm';
 import { fadeUp, viewportOnce } from '../lib/motion';
 
 const contactInfo = [
-  { icon: HiOutlinePhone, text: '+54 (351) 733‑6655' },
+  { icon: HiOutlinePhone, text: '+54 9 3543 69-6465' },
   { icon: HiOutlineEnvelope, text: 'ventas@sauren.ar' },
   { icon: HiOutlineMapPin, text: 'Hugo A. García 1603, Córdoba, Argentina' },
 ];
@@ -50,7 +50,7 @@ export default function Contact() {
               </div>
             ))}
             <a
-              href="https://wa.me/5493517336655?text=¡Hola!%20Me%20interesa%20una%20auditoría%20de%20software%20gratuita."
+              href="https://wa.me/5493354369646?text=¡Hola!%20Me%20interesa%20una%20auditoría%20de%20software%20gratuita."
               target="_blank"
               rel="noreferrer"
               className="mt-2 inline-flex items-center justify-center rounded-full bg-accent px-7 py-3.5 text-sm font-[NexaHeavy] uppercase tracking-wide text-white transition-all hover:bg-white hover:text-black"
