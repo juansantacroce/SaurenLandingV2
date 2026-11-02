@@ -36,6 +36,27 @@ export default function Projects() {
           className="grid gap-5 md:grid-cols-3"
         >
           <ProjectCard
+            name="Infas Group"
+            logo={logoInfas}
+            logoClassName="h-10 w-auto max-w-[200px] object-contain"
+            description="Módulo Odoo para la gestión de operaciones de fabricación: trazabilidad de operaciones internas y tercerizadas por pieza, control de órdenes de producción y visibilidad en tiempo real del estado de cada proceso a lo largo de la cadena productiva."
+            tags={['Odoo', 'Python', 'ERP', 'Manufactura']}
+          />
+          <ProjectCard
+            name="Fissore"
+            logo={logoFissore}
+            logoClassName="h-10 w-auto max-w-[200px] object-contain"
+            description="Módulo de pagos a medida sobre Odoo 18 para Argentina: cálculo automático de retenciones ARCA, recibos que reconcilian cheques, transferencias y pagos parciales combinados en una sola operación — algo que Odoo estándar no resuelve para el mercado local."
+            tags={['Odoo 18', 'Python', 'ERP', 'Argentina']}
+          />
+          <ProjectCard
+            name="Manicop"
+            logo={logoManicop}
+            logoClassName="h-14 w-auto max-w-[160px] object-contain"
+            description="Módulo de carga horaria sobre Odoo 18 Enterprise para digitalizar la gestión de mano de obra operativa en planta: supervisores asignan operarios por turno y sector, y el sistema imputa costos automáticamente a las órdenes de fabricación según reglas configurables por kilos producidos, unidades o consumo de ingrediente."
+            tags={['Odoo 18', 'Python', 'ERP', 'Fabricación']}
+          />
+          <ProjectCard
             name="Dinter"
             logo={logoDinter}
             description="Sistema de gestión para una distribuidora de publicaciones y coleccionables: desde el ingreso de mercadería hasta la asignación masiva a cientos de puntos de venta, con un motor propio que sugiere cantidades según el historial de cada cliente. Integrado en tiempo real con el operador logístico mediante una arquitectura orientada a eventos."
@@ -67,13 +88,6 @@ export default function Projects() {
             tags={['Django', 'React', 'React Native', 'IA']}
           />
           <ProjectCard
-            name="Infas Group"
-            logo={logoInfas}
-            logoClassName="h-10 w-auto max-w-[200px] object-contain"
-            description="Módulo Odoo para la gestión de operaciones de fabricación: trazabilidad de operaciones internas y tercerizadas por pieza, control de órdenes de producción y visibilidad en tiempo real del estado de cada proceso a lo largo de la cadena productiva."
-            tags={['Odoo', 'Python', 'ERP', 'Manufactura']}
-          />
-          <ProjectCard
             name="Aether ERP"
             logo={logoAether}
             logoClassName="h-12 w-auto max-w-[200px] object-contain"
@@ -81,24 +95,10 @@ export default function Projects() {
             tags={['Laravel 13', 'PHP 8.4', 'React 19', 'PostgreSQL', 'Redis', 'AFIP/ARCA']}
           />
           <ProjectCard
-            name="Fissore"
-            logo={logoFissore}
-            logoClassName="h-10 w-auto max-w-[200px] object-contain"
-            description="Módulo de pagos a medida sobre Odoo 18 para Argentina: cálculo automático de retenciones ARCA, recibos que reconcilian cheques, transferencias y pagos parciales combinados en una sola operación — algo que Odoo estándar no resuelve para el mercado local."
-            tags={['Odoo 18', 'Python', 'ERP', 'Argentina']}
-          />
-          <ProjectCard
             name="Indyec"
             logo={logoIndyec}
             description="App web progresiva (PWA) para la gestión integral de una clínica especializada en nefrología y cardiología: historia clínica digital, seguimiento de sesiones de diálisis, agenda de turnos, control de stock de insumos y consentimientos informados digitales. Instalable en Android e iOS sin pasar por tiendas de apps, con soporte offline y diseño mobile-first."
             tags={['React', 'TypeScript', 'PWA', 'Laravel', 'MySQL']}
-          />
-          <ProjectCard
-            name="Manicop"
-            logo={logoManicop}
-            logoClassName="h-14 w-auto max-w-[160px] object-contain"
-            description="Módulo de carga horaria sobre Odoo 18 Enterprise para digitalizar la gestión de mano de obra operativa en planta: supervisores asignan operarios por turno y sector, y el sistema imputa costos automáticamente a las órdenes de fabricación según reglas configurables por kilos producidos, unidades o consumo de ingrediente."
-            tags={['Odoo 18', 'Python', 'ERP', 'Fabricación']}
           />
         </motion.div>
       </div>
