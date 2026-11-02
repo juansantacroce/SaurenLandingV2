@@ -11,6 +11,7 @@ import logoManicop from '../assets/logos/LogoManicop.png';
 import logoIndyec from '../assets/logos/LogoIndyec.svg';
 import logoFissore from '../assets/logos/LogoFissore.svg';
 import logoAether from '../assets/logos/LogoAether.svg';
+import logoInfas from '../assets/logos/LogoInfas.svg';
 
 export default function Projects() {
   return (
@@ -64,6 +65,13 @@ export default function Projects() {
             logo={logoDacapo}
             description="Sistema de gestión integral para una escuela de música: agenda de clases, liquidación automática de honorarios docentes, seguimiento del progreso de cada alumno y facturación electrónica AFIP. Incluye una plataforma de entrenamiento auditivo con IA generativa y una app móvil única para profesores y alumnos."
             tags={['Django', 'React', 'React Native', 'IA']}
+          />
+          <ProjectCard
+            name="Infas Group"
+            logo={logoInfas}
+            logoClassName="h-10 w-auto max-w-[200px] object-contain"
+            description="Módulo Odoo para la gestión de operaciones de fabricación: trazabilidad de operaciones internas y tercerizadas por pieza, control de órdenes de producción y visibilidad en tiempo real del estado de cada proceso a lo largo de la cadena productiva."
+            tags={['Odoo', 'Python', 'ERP', 'Manufactura']}
           />
           <ProjectCard
             name="Aether ERP"

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" fill="none">
+  <defs>
+    <clipPath id="globeClip">
+      <circle cx="40" cy="40" r="34"/>
+    </clipPath>
+  </defs>
+
+  <!-- Globe background -->
+  <circle cx="40" cy="40" r="34" fill="#1B3480"/>
+
+  <!-- Grid lines clipped to circle -->
+  <g clip-path="url(#globeClip)" stroke="rgba(255,255,255,0.25)" stroke-width="1.2">
+    <!-- Horizontal parallels -->
+    <line x1="6" y1="22" x2="74" y2="22"/>
+    <line x1="6" y1="31" x2="74" y2="31"/>
+    <line x1="6" y1="40" x2="74" y2="40"/>
+    <line x1="6" y1="49" x2="74" y2="49"/>
+    <line x1="6" y1="58" x2="74" y2="58"/>
+    <!-- Vertical meridians -->
+    <line x1="16" y1="6" x2="16" y2="74"/>
+    <line x1="25" y1="6" x2="25" y2="74"/>
+    <line x1="34" y1="6" x2="34" y2="74"/>
+    <line x1="40" y1="6" x2="40" y2="74"/>
+    <line x1="46" y1="6" x2="46" y2="74"/>
+    <line x1="55" y1="6" x2="55" y2="74"/>
+    <line x1="64" y1="6" x2="64" y2="74"/>
+  </g>
+
+  <!-- Diamond cutout (white rhombus) -->
+  <polygon points="40,22 54,40 40,58 26,40" fill="white"/>
+
+  <!-- Inner diamond accent -->
+  <polygon points="40,28 50,40 40,52 30,40" fill="#1B3480"/>
+
+  <!-- Globe border -->
+  <circle cx="40" cy="40" r="34" stroke="#1B3480" stroke-width="1"/>
+
+  <!-- INFAS text -->
+  <text x="86" y="46" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-style="italic" font-size="34" fill="#1B3480" letter-spacing="-0.5">Infas</text>
+
+  <!-- GROUP text -->
+  <text x="193" y="46" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="#1B3480" letter-spacing="2">GROUP</text>
+</svg>
